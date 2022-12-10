@@ -1,0 +1,147 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.bgimage{
+	background-image:url('202895.jpg');
+	background-size: cover;
+	width:100%;
+	height:100vh;
+}
+.menu{
+	width:100vw;
+	height:100px;
+	max-height: 100px;
+	background-color:rgba(0,0,0,0.5)
+}
+.leftmenu{
+	width:20%;
+	line-height:100px;
+	float:left;
+}
+.leftmenu h4{
+	cursor: pointer;
+	padding-left: 50px;
+	font-weight: bold;
+	color: white;
+	font-size: 22px;
+	font-family:'montserrat',sans-serif;
+	position: relative;
+	animation-name: effect;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction:  alternate;
+	animation-timing-function: ease-in;
+    }
+    @keyframes effect{
+    0%{color: yellow;}
+    25%{color: maroon;}
+    50%{color: powderblue;}
+    100%{color: #ff0000;}	
+}
+.rightmenu{
+	width:75%;
+	height:100px;
+	float:right;
+}
+.rightmenu ul{
+	margin-left:100px;
+}
+.rightmenu ul li{
+	cursor: pointer;
+	font-family:'montserrat',sans-serif;
+	display: inline-block;
+	list-style: none;
+	font-size: 15px;
+	color:  rgb(150, 232, 147);
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 40px;
+	text-transform: uppercase;
+}
+.rightmenu ul li:hover{
+	color:rgb(188, 33, 108);
+}
+.text{
+	width:150vh;
+	margin-top:185px;
+	margin-left: 150px;
+	text-align: center;
+	color:white;
+}
+.text h4{
+	font-size:20px;
+	font-family:'open sans',sans-serif;
+	
+}
+.text h1{
+	font-size:60px;
+	font-family:'montserrat',sans-serif;
+	font-weight:700px;
+	margin:12px 0px;
+}
+.text h3{
+	font-size:12px;
+	}
+#buttonone{
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-size: 12px;
+	font-family: 'montserrat',sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 40px;
+	width: 150px;
+	margin-top: 50px;
+	border: 3px solid black;
+	
+	}
+#buttontwo{
+		color: white;
+		background-color: transparent;
+		border: none;
+		font-weight: bold;
+		line-height: 40px;
+		border: 3px solid black;
+		width: 150px;
+		font-family: 'montserrat',sans-serif;
+		margin: 12px;
+	}
+	@media screen and (max-width: 720px){ 
+.bgimage{
+		width: 100%;
+		height: 100vh;
+		
+		background-size: 100vh;
+		background: linear-gradient(white,powderblue);
+		
+	}
+	.menu{
+		width: 100vw;
+		height: 70px;
+		content: 10px;
+	}
+	.leftmenu{
+		width: 5%;
+		
+	}
+	.rightmenu{
+		width: 90%;
+		height: 100%;
+		
+	}
+	.leftmenu h4{
+		font-size: 10px;
+		padding-left: 25%;
+		bottom: 10px;
+	}
+	.rightmenu ul li{
+		margin-left: 50px;
+		font-size: 8px;	
+		padding: 4px;
+		margin: 5px;
+		margin-top:0px;
+		line-height: 70px;
+	}
+	}	
